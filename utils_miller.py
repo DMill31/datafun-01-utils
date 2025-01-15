@@ -49,20 +49,19 @@ mean_score: float = statistics.mean(client_satisfaction_scores)
 stdev_score: float = statistics.stdev(client_satisfaction_scores)
 
 # Use a Python formatted string (f-string) to show information
-# TODO: Modify the text in the byline to fit your information
 # TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
-Stellar Analytics: Delivering Professional Insights
+Wisconsin: Some Fun Personal Data
 ---------------------------------------------------------
-Has International Clients:  {has_international_clients}
-Years in Operation:         {years_in_operation}
-Skills Offered:             {skills_offered}
-Client Satisfaction Scores: {client_satisfaction_scores}
-Minimum Satisfaction Score: {min_score}
-Maximum Satisfaction Score: {max_score}
-Mean Satisfaction Score: {mean_score:.2f}
-Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+Is in Wisconsin:                          {is_in_wisconsin}
+Years in Wisconsin:                       {years_in_wisconsin}
+Wisconsin Cities:                         {wisconsin_cities}
+Daily Maximum Temperature in Fahrenheit:  {daily_max_temp_fahrenheit}
+Minimum Daily Maximum Temperature:        {min_score}
+Maximum Daily Maximum Temperature:        {max_score}
+Mean Daily Maximum Temperature:           {mean_score:.2f}
+Standard Deviation of Temperatures:       {stdev_score:.2f}
 """
 
 #####################################
