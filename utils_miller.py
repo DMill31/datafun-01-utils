@@ -4,8 +4,8 @@ Module: utils_miller
 Purpose: Reusable Module for My Analytics Projects
 
 Description: This module provides a byline for my first analytics project. 
-When we work hard to write useful code, we want it to be reusable.
-A good byline could be used in every Python analytics project we do.
+This byline showcases my personal experience living in Wisconsin.
+It contains both personal data as well as data taken from the state.
 
 Author: Daniel Miller
 Original Author: Denise Case
@@ -113,5 +113,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
-#TODO: Run this as a script and verify all code works as intended.
