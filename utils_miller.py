@@ -42,14 +42,12 @@ wisconsin_cities: list = ["Madison", "Milwaukee", "Green Bay"]
 daily_max_temp_fahrenheit: list = [21, 34, 40, 32, 8]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
-# TODO: Replace these variable names with the variable name of your own numeric list
-min_score: float = min(client_satisfaction_scores)  
-max_score: float = max(client_satisfaction_scores)  
-mean_score: float = statistics.mean(client_satisfaction_scores)  
-stdev_score: float = statistics.stdev(client_satisfaction_scores)
+min_temp: float = min(daily_max_temp_fahrenheit)  
+max_temp: float = max(daily_max_temp_fahrenheit)  
+mean_temp: float = statistics.mean(daily_max_temp_fahrenheit)  
+stdev_temp: float = statistics.stdev(daily_max_temp_fahrenheit)
 
 # Use a Python formatted string (f-string) to show information
-# TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
 Wisconsin: Some Fun Personal Data
@@ -58,10 +56,10 @@ Is in Wisconsin:                          {is_in_wisconsin}
 Years in Wisconsin:                       {years_in_wisconsin}
 Wisconsin Cities:                         {wisconsin_cities}
 Daily Maximum Temperature in Fahrenheit:  {daily_max_temp_fahrenheit}
-Minimum Daily Maximum Temperature:        {min_score}
-Maximum Daily Maximum Temperature:        {max_score}
-Mean Daily Maximum Temperature:           {mean_score:.2f}
-Standard Deviation of Temperatures:       {stdev_score:.2f}
+Minimum Daily Maximum Temperature:        {min_temp}
+Maximum Daily Maximum Temperature:        {max_temp}
+Mean Daily Maximum Temperature:           {mean_temp:.2f}
+Standard Deviation of Temperatures:       {stdev_temp:.2f}
 """
 
 #####################################
